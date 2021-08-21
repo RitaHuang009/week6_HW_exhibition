@@ -1,1 +1,9 @@
-@import './layout/_index.scss';
+@import "helpers/bootstrap";
+
+@import "helpers/variables";
+@import "helpers/helper";
+
+@import "layout/banner";
+@import "base";
+@import "layout/index";
+

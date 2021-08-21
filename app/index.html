@@ -1,42 +1,42 @@
 ---
-title: Boostrap Index
+title: Index
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
+<div class="banner bgCoverCenter">
+  <div class="container text-white h-100">
+    <div class="row align-items-center h-100">
+      <div class="col-12 col-lg-4 offset-md-1">
+        <h2 class="fs-2 fw-bold pb-2">台北當代藝術展</h2>
+        <h5 class="fs-5 fw-bold mb-4">01 JUN - 31 OCT</h5>
+        <div class="d-flex align-items-center">
+          <a class="btn btn-primary px-8 py-2 me-4" href="#">購買票券</a>
+          <a class="btn btn-outline-white px-8 py-2" href="#">詳細資訊</a>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
+</div>
+<div class="menu py-3 border-dark border">
+  <ul class="d-flex list-unstyled justify-content-md-center mb-0 menubar">
+    <li><a class="link-gray_light px-4 me-4" href="#">音樂</a></li>
+    <li><a class="link-gray_light px-4 me-4" href="#">戲劇</a></li>
+    <li><a class="link-gray_light px-4 me-4" href="#">設計</a></li>
+    <li><a class="link-gray_light px-4 me-4" href="#">藝術</a></li>
+    <li><a class="link-gray_light px-4 me-4" href="#">美食</a></li>
+    <li><a class="link-gray_light px-4 me-4" href="#">旅遊</a></li>
+    <li><a class="link-gray_light px-4 me-4" href="#">電影</a></li>
+    <li><a class="link-gray_light px-4 me-4" href="#">親子</a></li>
+    <li><a class="link-gray_light px-4 me-4" href="#">期間限定</a></li>
+  </ul>
 </div>
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch demo modal
-</button>
+</button> -->
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
