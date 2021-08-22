@@ -37,6 +37,7 @@
   --bs-dark: #212529;
   --bs-white: #ffffff;
   --bs-gray_light: #707070;
+  --bs-gray_bg: #EFEFEF;
   --bs-black: #000;
   --bs-primary-rgb: 227, 18, 119;
   --bs-secondary-rgb: 99, 8, 52;
@@ -48,6 +49,7 @@
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-gray_light-rgb: 112, 112, 112;
+  --bs-gray_bg-rgb: 239, 239, 239;
   --bs-black-rgb: 0, 0, 0;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
@@ -2304,15 +2306,15 @@ progress {
 }
 
 .table-secondary {
-  --bs-table-bg: #e2e3e5;
-  --bs-table-striped-bg: #d7d8da;
+  --bs-table-bg: #e0ced6;
+  --bs-table-striped-bg: #d5c4cb;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #cbccce;
+  --bs-table-active-bg: #cab9c1;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #d1d2d4;
+  --bs-table-hover-bg: #cfbfc6;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #cbccce;
+  border-color: #cab9c1;
 }
 
 .table-success {
@@ -3861,6 +3863,47 @@ fieldset:disabled .btn {
   border-color: #707070;
 }
 
+.btn-gray_bg {
+  color: #000;
+  background-color: #EFEFEF;
+  border-color: #EFEFEF;
+}
+
+.btn-gray_bg:hover {
+  color: #000;
+  background-color: #f1f1f1;
+  border-color: #f1f1f1;
+}
+
+.btn-check:focus + .btn-gray_bg, .btn-gray_bg:focus {
+  color: #000;
+  background-color: #f1f1f1;
+  border-color: #f1f1f1;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(203, 203, 203, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(203, 203, 203, 0.5);
+}
+
+.btn-check:checked + .btn-gray_bg,
+.btn-check:active + .btn-gray_bg, .btn-gray_bg:active, .btn-gray_bg.active,
+.show > .btn-gray_bg.dropdown-toggle {
+  color: #000;
+  background-color: #f2f2f2;
+  border-color: #f1f1f1;
+}
+
+.btn-check:checked + .btn-gray_bg:focus,
+.btn-check:active + .btn-gray_bg:focus, .btn-gray_bg:active:focus, .btn-gray_bg.active:focus,
+.show > .btn-gray_bg.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(203, 203, 203, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(203, 203, 203, 0.5);
+}
+
+.btn-gray_bg:disabled, .btn-gray_bg.disabled {
+  color: #000;
+  background-color: #EFEFEF;
+  border-color: #EFEFEF;
+}
+
 .btn-black {
   color: #fff;
   background-color: #000;
@@ -4239,6 +4282,40 @@ fieldset:disabled .btn {
 
 .btn-outline-gray_light:disabled, .btn-outline-gray_light.disabled {
   color: #707070;
+  background-color: transparent;
+}
+
+.btn-outline-gray_bg {
+  color: #EFEFEF;
+  border-color: #EFEFEF;
+}
+
+.btn-outline-gray_bg:hover {
+  color: #000;
+  background-color: #EFEFEF;
+  border-color: #EFEFEF;
+}
+
+.btn-check:focus + .btn-outline-gray_bg, .btn-outline-gray_bg:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(239, 239, 239, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(239, 239, 239, 0.5);
+}
+
+.btn-check:checked + .btn-outline-gray_bg,
+.btn-check:active + .btn-outline-gray_bg, .btn-outline-gray_bg:active, .btn-outline-gray_bg.active, .btn-outline-gray_bg.dropdown-toggle.show {
+  color: #000;
+  background-color: #EFEFEF;
+  border-color: #EFEFEF;
+}
+
+.btn-check:checked + .btn-outline-gray_bg:focus,
+.btn-check:active + .btn-outline-gray_bg:focus, .btn-outline-gray_bg:active:focus, .btn-outline-gray_bg.active:focus, .btn-outline-gray_bg.dropdown-toggle.show:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(239, 239, 239, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(239, 239, 239, 0.5);
+}
+
+.btn-outline-gray_bg:disabled, .btn-outline-gray_bg.disabled {
+  color: #EFEFEF;
   background-color: transparent;
 }
 
@@ -6197,6 +6274,16 @@ fieldset:disabled .btn {
   color: #363636;
 }
 
+.alert-gray_bg {
+  color: #606060;
+  background-color: #fcfcfc;
+  border-color: #fafafa;
+}
+
+.alert-gray_bg .alert-link {
+  color: #4d4d4d;
+}
+
 .alert-black {
   color: black;
   background-color: #cccccc;
@@ -6700,6 +6787,22 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #434343;
   border-color: #434343;
+}
+
+.list-group-item-gray_bg {
+  color: #606060;
+  background-color: #fcfcfc;
+}
+
+.list-group-item-gray_bg.list-group-item-action:hover, .list-group-item-gray_bg.list-group-item-action:focus {
+  color: #606060;
+  background-color: #e3e3e3;
+}
+
+.list-group-item-gray_bg.list-group-item-action.active {
+  color: #fff;
+  background-color: #606060;
+  border-color: #606060;
 }
 
 .list-group-item-black {
@@ -8033,6 +8136,14 @@ fieldset:disabled .btn {
   color: #5a5a5a;
 }
 
+.link-gray_bg {
+  color: #EFEFEF;
+}
+
+.link-gray_bg:hover, .link-gray_bg:focus {
+  color: #f2f2f2;
+}
+
 .link-black {
   color: #000;
 }
@@ -8515,6 +8626,10 @@ fieldset:disabled .btn {
 
 .border-gray_light {
   border-color: #707070 !important;
+}
+
+.border-gray_bg {
+  border-color: #EFEFEF !important;
 }
 
 .border-black {
@@ -9692,6 +9807,11 @@ fieldset:disabled .btn {
   color: rgba(var(--bs-gray_light-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-gray_bg {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-gray_bg-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
@@ -9786,6 +9906,11 @@ fieldset:disabled .btn {
 .bg-gray_light {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-gray_light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-gray_bg {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-gray_bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {
@@ -13951,10 +14076,48 @@ fieldset:disabled .btn {
   background-position: center center;
 }
 
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
 .banner {
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg") center center;
   height: 480px;
   background-size: cover;
+}
+
+.subscribebg {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg") center center;
+  height: 400px;
+  background-size: cover;
+}
+
+.img {
+  width: 100%;
 }
 
 .btn-primary:hover:focus:active {
@@ -13975,6 +14138,42 @@ fieldset:disabled .btn {
       flex-wrap: nowrap;
   overflow-x: auto;
   white-space: nowrap;
+}
+
+.exhibition img {
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.exhibition .fs-2 {
+  line-height: 48px;
+}
+
+.exhibition .fbicon img {
+  height: 16px;
+}
+
+@media (min-width: 992px) {
+  .exhibition img {
+    height: 350px;
+  }
+}
+
+.pastlivebg {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/people2.png") center center;
+  height: auto;
+  width: 100%;
+  background-size: cover;
+}
+
+.pastlivebg .fs-3 {
+  line-height: 48px;
+}
+
+.pastlivebg .pastliveinfo {
+  background-color: rgba(25, 0, 20, 0.7);
 }
 
 /*# sourceMappingURL=all.css.map */
