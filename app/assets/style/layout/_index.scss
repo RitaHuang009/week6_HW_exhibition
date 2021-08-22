@@ -18,3 +18,43 @@
         white-space: nowrap;
     }
 }
+
+.exhibition{
+    img{
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    .fs-2{
+        line-height: 48px;
+    }
+    .fbicon{
+        & img{
+            height: 16px;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg){
+    .exhibition{
+        img{
+            height: 350px;
+        }
+    }
+}
+
+
+.pastlivebg{
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/people2.png") center center;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    .fs-3{
+        line-height: 48px;
+    }
+    .pastliveinfo{
+        background-color: rgba(25, 0, 20, 0.7);
+        
+    }
+}
+

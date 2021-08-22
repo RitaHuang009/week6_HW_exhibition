@@ -68,7 +68,7 @@ $colors: (
 
 // scss-docs-start theme-color-variables
 $primary:       #E31277; // #00cc99 $blue !default;
-$secondary:     $gray-600 !default;
+$secondary:     #630834; //$gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -89,6 +89,7 @@ $theme-colors: (
   "dark":       $dark,
   "white":      #ffffff, //白色
   "gray_light":      #707070, //淺灰色
+  "gray_bg":      #EFEFEF,
   "black":      #000  //黑色,
 ) !default;
 // scss-docs-end theme-colors-map
