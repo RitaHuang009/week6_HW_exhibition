@@ -1,3 +1,9 @@
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -14463,6 +14469,39 @@ fieldset:disabled .btn {
   text-align: justify;
 }
 
+.z-1500 {
+  z-index: 1500;
+}
+
+.offcanvas-img {
+  height: 120px;
+  width: 120px;
+}
+
+.offcanvas-end {
+  width: auto;
+}
+
+.offcanvas-body {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-y: auto;
+  white-space: nowrap;
+  height: 540px;
+}
+
+.offcanvas-scrollbar::-webkit-scrollbar {
+  width: 2px;
+}
+
+.offcanvas-scrollbar::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.offcanvas-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #E31277;
+}
+
 .banner {
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg") center center;
   height: 480px;
@@ -14473,10 +14512,6 @@ fieldset:disabled .btn {
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg") center center;
   height: 400px;
   background-size: cover;
-}
-
-.img {
-  width: 100%;
 }
 
 .btn-primary:hover:focus:active {
