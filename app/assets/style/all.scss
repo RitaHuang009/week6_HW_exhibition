@@ -1,10 +1,13 @@
+@import "base";
 @import "helpers/bootstrap";
 
 @import "helpers/variables";
 @import "helpers/helper";
 @import "helpers/utilities";
 
+@import "layout/offcanvas";
 @import "layout/banner";
-@import "base";
+
 @import "layout/index";
+
 
